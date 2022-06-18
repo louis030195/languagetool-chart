@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   languagetool:
   - apiVersion: v2
+    created: "2022-06-18T09:29:02.345767396Z"
+    description: A Helm chart for Kubernetes
+    digest: dbc43bcfa6e7043f097fd813d77e638d6844a4f6ba6c234e83a62d77f4d4fc3c
+    name: languagetool
+    type: application
+    urls:
+    - https://github.com/louis030195/languagetool-chart/releases/download/languagetool-0.1.2/languagetool-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2021-08-12T14:32:51.4314832Z"
     description: A Helm chart for Kubernetes
     digest: 3c02e8e9322e3d2a02f95d37c218046ef1ef01bdaa7dcb39ac6f69f52c164f10
@@ -10,4 +19,4 @@ entries:
     urls:
     - https://github.com/louis030195/languagetool-chart/releases/download/languagetool-0.1.1/languagetool-0.1.1.tgz
     version: 0.1.1
-generated: "2021-08-12T14:32:51.4314879Z"
+generated: "2022-06-18T09:29:02.345775296Z"
