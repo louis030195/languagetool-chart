@@ -33,14 +33,14 @@ spec:
             - name: http
               containerPort: 8010
               protocol: TCP
-          # livenessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
-          # readinessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
+          startupProbe: 
+            tcpSocket:
+              port: 8010
+            initialDelaySeconds: 6
+            periodSeconds: 6
+            timeoutSeconds: 180
+            successThreshold: 1
+            failureThreshold: 30
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

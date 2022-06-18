@@ -14,7 +14,3 @@
 
   kubectl --namespace {{ .Release.Namespace }} port-forward $POD_NAME 8080:$CONTAINER_PORT
 {{- end }}
-  * try a curl
-    $ SENTENCE="Das Spielzeug ist in 7 Größen und Formen auf 7 verschiedene Karottengrößen zugeschnitten.z"
-    $ curl --data "language=auto&text=$SENTENCE" https://language.louis030195.com/v2/check
-

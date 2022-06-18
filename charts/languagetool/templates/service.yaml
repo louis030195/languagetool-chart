@@ -2,6 +2,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "languagetool-chart.fullname" . }}
+  annotations:
+    {{- if .Values.service.googleInternal | default false }}
+    cloud.google.com/load-balancer-type: "Internal"
+    {{- end }}
   labels:
     {{- include "languagetool-chart.labels" . | nindent 4 }}
 spec:
